@@ -1,0 +1,164 @@
+﻿@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+.container .title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #8170b3;
+}
+
+.auto-style1 {
+    width: 810px;
+    height: 521px;
+}
+
+.auto-style3 {
+    height: 245px;
+}
+
+
+.content {
+    width: inherit;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    margin: 30px auto;
+}
+
+    .content .article {
+        box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+        background-color: #eee;
+        padding: 25px 25px;
+    }
+
+        .content .article p {
+            margin-top: 30px;
+            font-size: 20px;
+            line-height: 1.5;
+            color: #222;
+        }
+
+        .content .article h2 {
+            color: #380c5c;
+            font-size: 22px;
+            line-height: 1.5;
+            letter-spacing: 1px;
+        }
+
+        .content .article a {
+            font-size: 22px;
+            text-decoration: none;
+            display: inline-block;
+            padding: 12px 35px;
+            background-color: #8170b3;
+            border-radius: 25px;
+            color: #fff;
+            border: 1px solid #8170b3;
+            letter-spacing: 1.5px;
+            margin-top: 10px;
+        }
+
+            .content .article a:hover {
+                background-color: #fff;
+                color: #8170b3;
+                transition: 0.2s ease;
+                border-color: #8170b3;
+            }
+
+@media screen and (max-width:900px) {
+    .content {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+.article {
+    text-align: center;
+}
+
+.auto-style5 {
+    text-align: justify;
+    width: 1350px;
+}
+
+.auto-style6 {
+    width: 792px;
+    height: 510px;
+}
+
+$timing : 265ms;
+$iconColor : #00B5F5;
+$accent : #002A8F;
+$bluefade : #0043E0;
+$gradient : #00B5F5;
+
+@mixin transformScale($size: 1) {
+    transform: scale($size);
+    -ms-transform: scale($size);
+    -webkit-transform: scale($size);
+}
+
+body {
+    background-color: rgba($iconColor, 0.05);
+}
+
+.social-container {
+    width: 400px;
+    margin: 40vh auto;
+    text-align: center;
+}
+
+.social-icons {
+    padding: 0;
+    list-style: none;
+    margin: 1em;
+    li
+
+{
+    display: inline-block;
+    margin: 0.15em;
+    position: relative;
+    font-size: 1.2em;
+}
+
+i {
+    color: #fff;
+    position: absolute;
+    top: 21px;
+    left: 21px;
+    transition: all $timing ease-out;
+}
+
+a {
+    display: inline-block;
+    &:before
+
+{
+    @include transformScale();
+    content: " ";
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: block;
+    background: linear-gradient(45deg, $iconColor, $accent);
+    transition: all $timing ease-out;
+}
+
+&:hover:before {
+    transform: scale(0);
+    transition: all $timing ease-in;
+}
+
+&:hover i {
+    @include transformScale(2.2);
+    color: $iconColor;
+    background: -webkit-linear-gradient(45deg, $iconColor, $accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all $timing ease-in;
+}
+
+}
+}

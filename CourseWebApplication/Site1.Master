@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="CourseWebApplication.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 34px;
+            width: 1041px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p>
+                    &nbsp;</p>
+            </asp:ContentPlaceHolder>
+        </div>
+        <p class="auto-style1">
+&nbsp;&nbsp;&nbsp;&nbsp;<asp:Image ID="Image1" runat="server" Height="195px" Width="222px" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p class="auto-style1">
+            &nbsp;</p>
+        <p class="auto-style1">
+            &nbsp;</p>
+        <p class="auto-style1">
+            &nbsp;</p>
+        <p class="auto-style1">
+&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="Button1" runat="server" Height="40px" OnClick="Button1_Click1" Text="Home" Width="200px" />
+            <asp:Button ID="Button2" runat="server" Height="40px" OnClick="Button2_Click" Text="Available Courses" Width="201px" />
+            <asp:Button ID="Button4" runat="server" Height="40px" Text="About Us" Width="200px" />
+            <asp:Button ID="Button5" runat="server" Height="40px" Text="Contact Us" Width="200px" />
+            <asp:Button ID="Button6" runat="server" Height="40px" Text="Other" Width="200px" />
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,205 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+    header h1 {
+        text-align: center;
+        font-size: 95px;
+        margin-top: 50px;
+    }
+
+    header img {
+        width: 200px;
+        height: auto;
+        margin-left: 20px;
+        margin-top: -300px;
+    }
+
+nav {
+    background-color: #444;
+    text-align: center;
+    padding: 3px 0;
+}
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden; /* Clearfix */
+}
+
+.main {
+    float: left;
+    width: 70%;
+    padding: 20px;
+}
+
+.sidebar {
+    float: right;
+    width: 30%;
+    padding: 20px;
+    background: #f0f0f0;
+}
+
+
+
+.auto-style1 {
+    width: 98%;
+    margin: auto;
+    overflow: hidden;
+    height: 41px;
+}
+
+.auto-style2 {
+    width: 99%;
+    margin: auto;
+    overflow: hidden;
+    height: 749px;
+}
+
+.newStyle1 {
+    font-size: 80px;
+}
+
+.newStyle2 {
+    font-family: "Corbel Light";
+}
+
+.newStyle3 {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.newStyle4 {
+    font-family: "Agency FB";
+}
+
+.newStyle5 {
+    font-family: fantasy;
+}
+
+.auto-style4 {
+    float: left;
+    width: 38%;
+    padding: 20px;
+    height: 210px;
+}
+
+.auto-style5 {
+    width: 520px;
+    height: 238px;
+    font-size: 65px;
+    font-weight: normal;
+}
+
+.auto-style6 {
+    float: right;
+    width: 49%;
+    padding: 20px;
+    background: #f0f0f0;
+    height: 402px;
+    margin-left: 0px;
+}
+
+.auto-style7 {
+    left: 25px;
+    bottom: -378px;
+    height: 18px;
+    padding-top: 1px;
+}
+
+.auto-style8 {
+    height: 694px;
+}
+
+.auto-style9 {
+    margin-left: 0px;
+    margin-right: 39px;
+}
+
+.newStyle6 {
+    font-family: "Bahnschrift SemiBold";
+    font-size: 60px;
+}
+
+.auto-style11 {
+    font-family: "Bahnschrift SemiBold";
+    font-size: 70px;
+}
+
+.auto-style12 {
+    font-size: 18pt;
+}
+.menu-bar {
+    background:#075884;
+    text-align: center;
+}
+
+    .menu-bar ul {
+        display: inline-flex;
+        list-style: none;
+        color: black;
+    }
+
+        .menu-bar ul li {
+            width: 120px;
+            margin: 15px;
+            padding: 15px;
+        }
+
+            .menu-bar ul li a {
+                text-decoration: none;
+                color:antiquewhite;
+            }
+
+            .active, .menu-bar ul li:hover {
+                background: #333;
+                border-radius: 3px;
+            }
+
+.sub-menu-1 {
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background: #420c35;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+    .menu-bar ul li:hover .sub-menu-1 ul {
+        display: block;
+        margin: 10px;
+    }
+
+        .menu-bar ul li:hover .sub-menu-1 ul li {
+            width: 150px;
+            padding: 10px;
+            border-bottom: 1px dotted #fff;
+            background: transparent;
+            border-radius: 0;
+            text-align: left;
+        }
+   
+    
+   
